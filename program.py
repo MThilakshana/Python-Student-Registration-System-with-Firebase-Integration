@@ -2,14 +2,9 @@ from tkinter import *
 
 root=Tk()
 root.title('Student Registration')
-root.geometry('775x400+300+200')
+root.geometry('775x330+300+200')
 root.configure(bg="#fff")
 root.resizable(False,False)
-
-frame = Frame(root,
-              width=200,
-              height=400,
-              bg='red').place(x=575,y=0)
 
 Label(root,
       text="Student Registration",
@@ -88,6 +83,43 @@ university = Entry(root,
       fg='Black',
       bg='white',
       width=40).place(x=200,y=270)
+
+searchbtn = Button(root,
+                   text="Search",
+                   font=('Times',12),
+                   fg="Black",
+                   bg="White",
+                   width=15,
+                   border=3,
+                   cursor="hand2").place(x=600,y=70)
+
+updatebtn = Button(root,
+                   text="Update",
+                   font=('Times',12),
+                   fg="Black",
+                   bg="White",
+                   width=15,
+                   border=3,
+                   cursor="hand2").place(x=600,y=120)
+
+savebtn = Button(root,
+                   text="Save",
+                   font=('Times',12),
+                   fg="Black",
+                   bg="White",
+                   width=15,
+                   border=3,
+                   cursor="hand2").place(x=600,y=170)
+
+exitbtn = Button(root,
+                   text="Exit",
+                   font=('Times',12),
+                   fg="Black",
+                   bg="White",
+                   width=15,
+                   border=3,
+                   cursor="hand2",
+                   command=root.destroy).place(x=600,y=260)
 
 
 root.mainloop()
